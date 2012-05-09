@@ -1,5 +1,6 @@
 public abstract class Acuaticos implements Animales{
 		private String nombre;
+	int calcularEdadAnimal(int meses);
 
 	public String getNombre(){
 		return nombre;

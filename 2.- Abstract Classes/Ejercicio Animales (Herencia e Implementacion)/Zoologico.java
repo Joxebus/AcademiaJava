@@ -2,15 +2,30 @@ public class Zoologico{
 
 	public static void main(String []args){
 		// Creación de instancia
-		Acuaticos ave = new Acuaticos();
+		Canario canario = new Canario();
+		Aguila aguila = new Aguila();
+		Persona persona = new Persona();
 		
 		// Asignación de valores a la instancia
-		ave.setColor(args[0]);
-		ave.nombre = args[1];
+		canario.setNombre(args[0]);
+		aguila.setNombre(args[1]);
+		persona.setNombre(args[2]);
 		
-		// Obtención de valores de la instancia
-		System.out.println(ave.nombre);
-		System.out.println(ave.getColor());
+
+		Animales animal = canario;
+
+		animal.comer();
+		animal.dormir();
+
+		animal = aguila;
+		animal.desplazarse();
+		animal.emitirSonido();
 		
+		animal = persona;
+
+		animal.comer();
+		animal.dormir();
+		animal.desplazarse();
+		animal.emitirSonido();
 	}
 }
