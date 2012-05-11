@@ -1,13 +1,16 @@
 public class Terrestres{
-	public String nombre;
-	private String color;
-
-	public String getColor(){
-		return color;
+	private String nombre;
+	
+	public String getNombre(){
+		return nombre;
 	}
 
-	public void setColor(String color){
-		this.color = color;
+	public void setNombre(String nombre){
+		this.nombre = nombre;
+	}
+
+	public void correr(){
+		System.out.println("Estoy comiendo como una animal terrestre");
 	}
 
 }

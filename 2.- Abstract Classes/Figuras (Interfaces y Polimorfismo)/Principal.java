@@ -11,5 +11,10 @@ public class Principal{
 		Circulo cir = new Circulo();
 		cir.setRadio(13.5);
 		geo.evaluarFigura(cir);
+
+		Cilindro cilindro = new Cilindro();
+		cilindro.setRadio(5.3);
+		cilindro.setAltura(10);
+		geo.evaluarFigura(cilindro);
 	}
 }

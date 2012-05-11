@@ -2,15 +2,14 @@ public class Zoologico{
 
 	public static void main(String []args){
 		// Creación de instancia
-		Acuaticos ave = new Acuaticos();
+		Perro perro = new Perro();
 		
 		// Asignación de valores a la instancia
-		ave.setColor(args[0]);
-		ave.nombre = args[1];
+		perro.setNombre("Fido");
 		
 		// Obtención de valores de la instancia
-		System.out.println(ave.nombre);
-		System.out.println(ave.getColor());
+		System.out.println("El nombre de mi "+perro.getClass().getName()+" es "+perro.getNombre());
+		perro.correr();
 		
 	}
 }
