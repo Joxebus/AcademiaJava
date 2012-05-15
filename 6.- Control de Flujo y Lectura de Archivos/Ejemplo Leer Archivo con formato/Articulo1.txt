@@ -1,0 +1,25 @@
+Jueves, 12 enero 2012
+Neurología
+Identificada la zona del cerebro que entiende la realidad en tres dimensiones
+
+Expertos de la Universidad de Leuven en Bélgica han logrado localizar, en primates, la región del cerebro responsable de que se perciban las estructuras en 3D. El hallazgo podría ayudar a solucionar problemas epilépticos y evitar neurocirugías.
+
+El trabajo, que se publica en la revista Neuron, concluye que la corteza inferotemporal es la parte del cerebro encargada de diferenciar superficies cóncavas y convexas.
+
+“La corteza temporal inferior es responsable del reconocimiento de objetos. Tanto en monos como en humanos, cuando existe una lesión en ella se puede padecer agnosia, la incapacidad para reconocer objetos o estímulos ya aprendidos”, explica a SINC Peter Janssen, autor principal del artículo e investigador de la Universidad Católica de Leuven, Bélgica.
+
+La actividad de las neuronas en esta región de la corteza cerebral crea una representación del objeto. “Si pensamos en nuestro coche habrá varios millones de neuronas en esta zona del cerebro que aumenten su actividad para que sea posible reconocer ese automóvil en concreto”, aclara Janssen.
+
+El experto añade que gracias a esta área cerebral, “al observar un balón de fútbol, por ejemplo, inmediatamente sabemos que tiene profundidad, que no es plano sino convexo y con estructura tridimensional”.
+
+Los investigadores hicieron pruebas con primates a los que, mediante pequeñas descargas eléctricas, se les estimularon grupos de neuronas en la corteza temporal inferior mientras trataban de decidir si una superficie era cóncava o convexa.
+
+Los seres humanos pueden captar la profundidad de los objetos, lo que hace que perciban la realidad en tres dimensiones. (Imagen: fotomaf)
+Los resultados mostraron que cuando se aplicaban descargas sobre las neuronas que se activaban frente a superficies convexas, los monos eran mucho más propensos a elegir “convexo” en su decisión. Lo mismo ocurría con las superficies cóncavas y las neuronas que respondían ante ellas.
+
+Los avances aportados por esta investigación podrían aplicarse en tratamientos para pacientes con epilepsia que no responden a la medicación. De este modo los neurocirujanos podrían evitar tener que someter a estos enfermos a una lobectomía temporal. Se trata de una intervención en la que se extirpa una zona del cerebro y que puede provocar problemas en el reconocimiento de las tres dimensiones.
+
+“La evolución ha proporcionado la percepción de profundidad, porque es importante, entre otras cosas, para calcular la distancia que un depredador necesita saltar para alcanzar a una presa”, explica Janssen.
+
+“Especies cazadoras como gatos, primates y seres humanos tienen los dos ojos mirando hacia delante. Esto permite que su cerebro pueda calcular las leves diferencias de profundidad entre imágenes de una escena con los dos ojos”, informa Janssen. 
+(Fuente: SINC)
