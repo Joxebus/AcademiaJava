@@ -1,0 +1,27 @@
+lunes, 7 de Febrero de 2011
+Computación
+Nuevo Chip Con un Poco Menos de Precisión Que los Convencionales Pero una Potencia Muy Superior
+
+Un chip que realiza cálculos que no son del todo exactos podría a cambio procesar algunos tipos de datos miles de veces más eficientemente que 
+los chips actuales.
+
+Pregúntele a un ordenador cuál es el resultado de sumar 100 y 100, y su respuesta será 200. Pero ¿y si a veces responde 202 y otras veces 199, o 
+cualquier otro número dentro del margen del 1 por ciento de diferencia con respecto a la respuesta correcta?
+
+A priori, puede parecer que un dispositivo así no serviría para nada. Sin embargo, los circuitos aritméticos de esta clase sobre los que ya se
+trabaja serían mucho más pequeños que los usados en los ordenadores de hoy en día. Además, consumirían menos energía, y en un solo chip podría
+incluirse una cantidad de estos circuitos muy superior a la de los convencionales, aumentando así considerablemente el número de cálculos que
+podrían realizar al mismo tiempo. La cuestión es: ¿para qué aplicaciones podrían ser útiles estos cálculos imprecisos pero rápidos?
+
+Los primeros resultados de una investigación encabezada por Joseph Bates (Universidad Carnegie Mellon), Deb Roy (MIT) y George Shaw (MIT) indican
+que esta nueva clase de chips parece ser particularmente apropiada para el procesamiento de imágenes y de vídeo. Las pequeñas imperfecciones que 
+surjan a consecuencia de la menor precisión del chip pasarán desapercibidas para el ojo humano, y a cambio, el chip ofrecerá una potencia de 
+procesamiento muy superior a la de los convencionales. Los actuales chips comerciales suelen tener cuatro o incluso ocho "núcleos", o unidades de 
+procesamiento separadas, mientras que el chip del equipo de Bates tiene del orden del millar, y dado que este chip no necesita proporcionar 
+resultados perfectamente precisos, sus núcleos son mucho más pequeños que los núcleos convencionales.
+
+Otra área de aplicaciones está en las interacciones entre humanos y ordenadores, puesto que las acciones humanas ya de por sí carecen de una 
+precisión perfecta. Por ejemplo, si usted pone su mano sobre un ratón de ordenador y lo mueve un poco, realmente no importa dónde coloque 
+exactamente el ratón, ya que una décima de milímetro de desviación del puntero en la pantalla no va a afectar a la precisión de las operaciones 
+que haga con él.
+(Fuente: http://comm-cms-1.mit.edu/newsoffice/2010/fuzzy-logic-0103.html)

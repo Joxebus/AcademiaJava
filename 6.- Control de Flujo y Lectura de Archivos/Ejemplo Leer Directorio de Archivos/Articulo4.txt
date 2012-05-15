@@ -1,0 +1,23 @@
+Miércoles, 11 enero 2012
+Electrónica
+
+¿El fin de los chips planos?
+
+Una arquitectura más en vertical, aumentaría la densidad de circuitos en un chip, igual que se aumenta el espacio interior disponible en un 
+terreno edificado al pasar de las casas estilo rancho tejano a los rascacielos típicos de Nueva York y otras grandes urbes.
+
+Esta filosofía de diseño podría permitir a los ingenieros construir circuitos integrados más rápidos, más compactos y de mayor eficiencia en 
+definitiva, así como ordenadores portátiles más ligeros y que generen menos calor.
+
+Los nuevos transistores, creados por un equipo de investigadores de las universidades de Harvard y Purdue, en Estados Unidos, contienen diminutos 
+nanocables que no están hechos de silicio, como los transistores convencionales, sino de arseniuro de galio e indio.
+
+Estos nuevos transistores se pueden construir utilizando un método similar a los procesos industriales ya existentes para la fabricación de 
+componentes electrónicos.
+
+Como el método de fabricación es compatible con los procesos de fabricación convencionales, es muy probable que pueda ser adoptado por la 
+industria sin problemas.
+
+Este importante avance es obra del equipo de ingenieros electrónicos y químicos de Peide "Peter" Ye y Jiangjiang Gu, de la Universidad Purdue, y 
+Yiqun Liu y Roy Gordon, de la Universidad de Harvard.
+(Fuente: Noticiasdelaciencia.com / Amazings.com)

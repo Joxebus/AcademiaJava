@@ -1,0 +1,45 @@
+The surprising usefulness of sloppy arithmetic
+A computer chip that performs imprecise calculations could process some types of data thousands of times more efficiently than existing chips.
+Larry Hardesty, MIT News Office
+
+Ask a computer to add 100 and 100, and its answer will be 200. But what if it sometimes answered 202, and sometimes 199, or any other number 
+within about 1 percent of the correct answer?
+
+Arithmetic circuits that returned such imprecise answers would be much smaller than those in today’s computers. They would consume less power, 
+and many more of them could fit on a single chip, greatly increasing the number of calculations it could perform at once. The question is how 
+useful those imprecise calculations would be.
+
+If early results of a research project at MIT are any indication, the answer is, Surprisingly useful. About a year ago, Joseph Bates, an 
+adjunct professor of computer science at Carnegie Mellon University, was giving a presentation at MIT and found himself talking to Deb Roy, a 
+researcher at MIT’s Media Lab. Three years earlier, before the birth of his son, Roy had outfitted his home with 11 video cameras and 14 
+microphones, intending to flesh out what he calls the “surprisingly incomplete and biased observational data” about human speech acquisition.
+
+    * Video: Watch Roy discuss 'The birth of a word' at the 2011 TED Conference
+
+Data about a child’s interactions with both its caregivers and its environment could help confirm or refute a number of competing theories in 
+developmental psychology. But combing through more than 100,000 hours of video for, say, every instance in which either a child or its 
+caregivers says “ball,” together with all the child’s interactions with actual balls, is a daunting task for human researchers and artificial-
+intelligence systems alike. Bates had designed a chip that could perform tens of thousands of simultaneous calculations using sloppy arithmetic 
+and was looking for applications that leant themselves to it.
+
+Roy and Bates knew that algorithms for processing visual data are often fairly error-prone: A system that identifies objects in static images, 
+for instance, is considered good if it’s right about half the time. Increasing a video-processing algorithm’s margin of error ever so slightly, 
+the researchers reasoned, probably wouldn’t compromise its performance too badly. And if the payoff was the ability to do thousands of 
+computations in parallel, Roy and his colleagues might be able to perform analyses of video data that they hadn’t dreamt of before.
+
+High tolerance
+
+So in May 2010, with funding from the U.S. Office of Naval Research, Bates came to MIT as a visiting professor, working with Roy’s group to 
+determine whether video algorithms could be retooled to tolerate sloppy arithmetic. George Shaw, a graduate student in Roy’s group, began by 
+evaluating an algorithm, commonly used in object-recognition systems, that distinguishes foreground and background elements in frames of video.
+
+To simulate the effects of a chip with imprecise arithmetic circuits, Shaw rewrote the algorithm so that the results of all its numerical 
+calculations were either raised or lowered by a randomly generated factor of between 0 and 1 percent. Then he compared its performance to that 
+of the standard implementation of the algorithm. “The difference between the low-precision and the standard arithmetic was trivial,” Shaw says. 
+“It was about 14 pixels out of a million, averaged over many, many frames of video.” “No human could see any of that,” Bates adds.
+
+Of course, a really useful algorithm would have to do more than simply separate foregrounds and backgrounds in frames of video, and the 
+researchers are exploring what tasks to tackle next. But Bates’ chip design looks to be particularly compatible with image and video 
+processing. Although he hasn’t had the chip manufactured yet, Bates has used standard design software to verify that it will work as 
+anticipated. Where current commercial computer chips often have four or even eight “cores,” or separate processing units, Bates’ chip has a 
+thousand; since they don’t have to provide perfectly precise results, they’re much smaller than conventional cores.
