@@ -6,8 +6,16 @@ public class Cilindro extends Circulo{
 		this.altura = altura;
 	}
 
+	public double area(){
+		return 2*PI*this.getRadio()*(altura+this.getRadio());
+	}
+
 	public double volumen(){
-		return this.area()*altura;
+		return base()*altura;
+	}
+
+	public double base(){
+		return Math.pow((PI*this.getRadio()),2);
 	}
 	
 }

@@ -1,6 +1,6 @@
 public class Circulo implements Figura{
 	private double radio;
-	private static final double PI = 3.1416;
+	public static final double PI = 3.1416;
 	
 	public double area(){
 		//return (PI*radio)*(PI*radio);		
