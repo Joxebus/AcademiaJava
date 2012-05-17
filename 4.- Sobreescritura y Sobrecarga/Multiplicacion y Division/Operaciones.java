@@ -26,7 +26,7 @@ public Class Operaciones{
 		if(multiplicador <= 0){
 			return resultado;
 		}else{
-			return (multiplicando, --multiplicador, resultado+multiplicando);
+			return multiplicacion (multiplicando, --multiplicador, resultado+multiplicando);
 		}
 	}
 
