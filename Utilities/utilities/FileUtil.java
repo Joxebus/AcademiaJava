@@ -132,10 +132,11 @@ public final class FileUtil{
 		try{
 			if( path!= null && (fw == null || pw == null) ){
 				fw = new FileWriter(path.trim());
-				br = new BufferedReader(fr);
+				pw = new PrintWriter(fw);
 			}
-			if( pw != null ){				
-				pw.println(line);
+			if( pw != null ){	
+				System.out.println(line);			
+				pw.write(line);
 			}
 		}catch(IOException ioe){
 			ioe.printStackTrace();
