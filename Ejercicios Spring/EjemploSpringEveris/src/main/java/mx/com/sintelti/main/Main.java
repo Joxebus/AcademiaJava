@@ -16,9 +16,12 @@ public class Main {
 		DispositivoElectronico dvd = context.getBean("dvdPrototype",ReproductorDVD.class);
 		DispositivoElectronico mp3 = context.getBean("mp3Prototype",ReproductorMP3.class);
 		DispositivoElectronico blueRay = context.getBean("blueRayPrototype",ReproductorBlueRay.class);
-		TestDevice.testDevice(dvd);
-		TestDevice.testDevice(mp3);
-		TestDevice.testDevice(blueRay);
+		TestDevice tester = context.getBean("tester",TestDevice.class);
+		tester.addDevice(dvd);
+		tester.addDevice(mp3);
+		tester.addDevice(blueRay);
+		tester.testDevices();	
 		
+		System.out.println(tester.getDevices().getClass().getName());
 	}
 }

@@ -1,5 +1,10 @@
 package mx.com.sintelti.entity;
 
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+@Component("mp3Prototype")
+@Scope("prototype")
 public class ReproductorMP3 extends Reproductor implements DispositivoElectronico {
 
 	@Override
