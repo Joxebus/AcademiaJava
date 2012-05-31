@@ -1,4 +1,9 @@
-package mx.com.everis.service;
+/**
+* @author: Jorge Omar Bautista Valenzuela
+* Date: 31/05/2012
+* e-mail: joxebus@gmail.com
+*
+*/
 
 import mx.com.everis.entity.PersistibleInterface;
 import mx.com.everis.util.HibernateUtil;
