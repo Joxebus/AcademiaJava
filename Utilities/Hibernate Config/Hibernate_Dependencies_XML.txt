@@ -1,0 +1,37 @@
+<dependencies>
+  	<!-- Hibernate Core -->
+  	<dependency>
+  		<groupId>org.hibernate</groupId>
+  		<artifactId>hibernate-core</artifactId>
+  		<version>3.3.2.GA</version>
+  		<type>jar</type>
+  		<scope>compile</scope>  	
+  	</dependency>
+  	
+  	<!-- Hibernate requiere de esta dependecia para llevar el log de sus operaciones  -->
+  	<dependency>
+  		<groupId>org.slf4j</groupId>
+  		<artifactId>slf4j-simple</artifactId>
+  		<version>1.6.1</version>
+  		<type>jar</type>
+  		<scope>compile</scope>
+  	</dependency>
+
+	<!-- Hibernate la utiliza para reflection en tiempo de ejecución y recompilar codigo JIT-->
+	<dependency>
+  		<groupId>javassist</groupId>
+  		<artifactId>javassist</artifactId>
+  		<version>3.4.GA</version>
+  	</dependency>
+  	
+  	<!-- Para la conexión a la base de datos (Opcional depende de la base de Datos)-->
+  	<dependency>
+  		<groupId>org.hsqldb</groupId>
+  		<artifactId>hsqldb</artifactId>
+  		<version>2.0.0</version>
+  		<type>jar</type>
+  		<scope>compile</scope>
+  	</dependency> 	
+  	
+  
+  </dependencies>
