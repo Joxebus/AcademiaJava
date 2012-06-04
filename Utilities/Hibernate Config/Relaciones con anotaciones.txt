@@ -1,0 +1,27 @@
+Relaciones con anotaciones
+
+One to One
+a)
+@OneToOne(fetch = FetchType.LAZY, mappedBy = "nombreEntity", cascade = CascadeType.ALL)
+b)
+@GenericGenerator(name = "generator", strategy = "foreign", 
+parameters = @Parameter(name = "property", value = "propiedadRelacionada"))
+@Id
+@GeneratedValue(generator = "generator")
+
+@OneToOne(fetch = FetchType.LAZY)
+@PrimaryKeyJoinColumn
+
+One to Many
+@OneToMany(fetch = FetchType.LAZY, mappedBy = "nombreEntity")
+
+@ManyToOne(fetch = FetchType.LAZY)
+@JoinColumn(name = "ID_DE_ONE_TO_MANY", nullable = false)
+
+
+Many to Many
+@ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+@JoinTable(name = "nombre_de_la_tabla", joinColumns = { 
+			@JoinColumn(name = "PROPIEDAD_UNION_A", nullable = false, updatable = false) }, 
+			inverseJoinColumns = { @JoinColumn(name = "PROPIEDAD_UNION_B", 
+					nullable = false, updatable = false) })

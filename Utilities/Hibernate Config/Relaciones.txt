@@ -1,0 +1,10 @@
+delete­-orphan
+
+<list name="propiedad" cascade="all­-delete­-orphan"> 
+    <key column="ID_DESIGNADO" /> 
+    <index column="COLUMNA_QUE_DEFINE_EL_ORDEN" /> 
+    <one-­to-­many class="nombre.cualificado.de.la.clase" /> 
+</list>
+
+
+<many-to-one name="propiedad" class="nombre.cualificado.de.la.clase" ></many-to-one>
