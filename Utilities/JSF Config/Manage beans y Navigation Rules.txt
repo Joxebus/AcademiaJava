@@ -1,0 +1,18 @@
+<managed-bean>
+  <managed-bean-name></managed-bean-name>
+  <managed-bean-class></managed-bean-class>
+  <managed-bean-scope></managed-bean-scope>
+  <managed-property>
+   <property-name></property-name>
+   <value></value>
+  </managed-property>
+ </managed-bean>
+
+
+<navigation-rule>
+  <from-view-id></from-view-id>
+  <navigation-case>
+	   <from-outcome></from-outcome>
+	   <to-view-id></to-view-id>
+  </navigation-case>  
+</navigation-rule>
