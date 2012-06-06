@@ -1,12 +1,12 @@
 <dependencies>
   	<!-- Hibernate Core -->
   	<dependency>
-  		<groupId>org.hibernate</groupId>
-  		<artifactId>hibernate-core</artifactId>
-  		<version>3.3.2.GA</version>
-  		<type>jar</type>
-  		<scope>compile</scope>  	
-  	</dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>3.3.2.GA</version>
+		</dependency>
+
+		
 
 	<!-- Soporte para las anotaciones de Hibernate -->
 		<dependency>
