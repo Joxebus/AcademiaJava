@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf13389944994520" configfile="/MiProyectoJSF/WebContent/WEB-INF/faces-config.xml">
-  <nodes xsi:type="pageflow:PFPage" name="login" x="12" y="79" id="pf13390117401071" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf13390117401072 pf13390117401073" path="/login.jsp"/>
-  <nodes xsi:type="pageflow:PFPage" name="exito" x="216" y="156" id="pf13390117401074" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf13390117401072" path="/exito.jsp"/>
-  <nodes xsi:type="pageflow:PFPage" name="error" x="204" y="12" id="pf13390117401075" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" inlinks="pf13390117401073" path="/error.jsp"/>
-  <links id="pf13390117401072" target="pf13390117401074" source="pf13390117401071" outcome="exito"/>
-  <links id="pf13390117401073" target="pf13390117401075" source="pf13390117401071" outcome="error"/>
+  <nodes xsi:type="pageflow:PFPage" name="error" id="pf13390792122643" referenceLink="//@navigationRule.1/@navigationCase.1/@toViewId|" inlinks="pf13390811131195" path="/error.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="exito" id="pf13390792122644" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" inlinks="pf13390811131196" path="/exito.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" id="pf13390811131197" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf13390811131196 pf13390811131195 pf133908142404710" inlinks="pf13390811131198" path="/login.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="r" id="pf13390811131199" referenceLink="//@navigationRule.1/@navigationCase.2/@toViewId|" outlinks="pf13390811131198" inlinks="pf133908142404710" path="/registro.jsp"/>
+  <links id="pf13390811131196" target="pf13390792122644" source="pf13390811131197" outcome="exito"/>
+  <links id="pf13390811131195" target="pf13390792122643" source="pf13390811131197" outcome="error"/>
+  <links id="pf13390811131198" target="pf13390811131197" source="pf13390811131199" outcome="registro correcto"/>
+  <links id="pf133908142404710" target="pf13390811131199" source="pf13390811131197" outcome="registrar"/>
 </pageflow:Pageflow>

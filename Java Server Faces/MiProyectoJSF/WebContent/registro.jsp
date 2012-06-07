@@ -6,19 +6,19 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Regsitro de usuarios</title>
+<title>Registro de usuarios</title>
 </head>
 <body>
 <f:view>
 	<center>
 		<h:form>			
 			<h3>Formulario de registro</h3>
-			<h:panelGrid columns="2">
-				<h:outputLabel value="Nombre: "></h:outputLabel> <h:inputText value="#{registro.nombre}"></h:inputText>
-				<h:outputLabel value="e-mail: "></h:outputLabel><h:inputText value="#{registro.email}"></h:inputText>		
-				<h:outputLabel value="Usuario: "></h:outputLabel> <h:inputText value="#{registro.usuario}"></h:inputText>
-				<h:outputLabel value="Contraseña: "></h:outputLabel><h:inputSecret value="#{registro.contrasenia}"></h:inputSecret>				
-				<h:commandButton value="Registrar" action="#{registro.registrar}"></h:commandButton>			
+			<h:panelGrid columns="2">			
+				<h:outputLabel value="Nombre: "></h:outputLabel> <h:inputText value="#{usuarioRegistro.nombre}" ></h:inputText>
+				<h:outputLabel value="e-amil: "></h:outputLabel> <h:inputText value="#{usuarioRegistro.email}" ></h:inputText>
+				<h:outputLabel value="Usuario: "></h:outputLabel> <h:inputText value="#{usuarioRegistro.usuario}" ></h:inputText>
+				<h:outputLabel value="Contraseña: "></h:outputLabel> <h:inputSecret value="#{usuarioRegistro.contrasenia}" ></h:inputSecret>
+				<h:commandButton value="Registrar" action="#{registro.registrar}"></h:commandButton>
 			</h:panelGrid>			
 		</h:form>
 	</center>	

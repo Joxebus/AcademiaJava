@@ -16,9 +16,7 @@ public class UsuarioEntity implements PersistibleInterface {
 	private String nombre;
 	private String email;
 	
-	public UsuarioEntity() {
-		
-	}
+	public UsuarioEntity() { }	
 	
 	public UsuarioEntity(String usuario, String contrasenia, String nombre,
 			String email) {
@@ -29,7 +27,7 @@ public class UsuarioEntity implements PersistibleInterface {
 		this.email = email;
 	}
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	public long getId() {
 		return id;
 	}

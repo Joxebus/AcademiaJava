@@ -15,11 +15,6 @@ public class LoginBean {
 		}
 	}
 	
-	public String registrar(){
-		return "registrar";
-	}
-	
-	
 	public String getUsuario() {
 		return usuario;
 	}

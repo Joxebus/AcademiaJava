@@ -17,7 +17,7 @@
 				<h:outputLabel value="Usuario: "></h:outputLabel> <h:inputText value="#{login.usuario}" maxlength="5"></h:inputText>
 				<h:outputLabel value="Contraseña: "></h:outputLabel><h:inputSecret value="#{login.contrasenia}"></h:inputSecret>				
 				<h:commandButton value="Ingresar" action="#{login.validar}"></h:commandButton>			
-				<h:commandButton value="Registrar" action="#{login.registrar}"></h:commandButton>
+				<h:commandButton value="Registrar" action="registrar"></h:commandButton>
 			</h:panelGrid>			
 		</h:form>
 	</center>	

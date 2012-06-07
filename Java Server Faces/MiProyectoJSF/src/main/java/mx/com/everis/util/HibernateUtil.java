@@ -7,6 +7,7 @@ public class HibernateUtil {
 	
 	private static final SessionFactory SESSION_FACTORY = buildSessionFactory();
 	
+	
 	private static SessionFactory buildSessionFactory(){
 		try{			
 			return new AnnotationConfiguration().configure().buildSessionFactory(); 
@@ -17,6 +18,6 @@ public class HibernateUtil {
 	
 	public static SessionFactory getSessionFactory(){
 		return SESSION_FACTORY;
-	}
+	}	
 
 }
