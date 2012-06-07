@@ -1,0 +1,22 @@
+<!-- Inicia configuracion Spring web.xml -->
+<listener>
+  <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+</listener>
+
+<!-- Opcional -->
+<context-param>
+  <param-name>contextConfigLocation</param-name>
+  <param-value>/WEB-INF/applicationContext*.xml</param-value>
+</context-param>
+
+<!-- Termina configuracion Spring web.xml -->
+
+
+<!-- Inicia configuracion Spring faces-config.xml -->
+<application>
+    <variable-resolver>org.springframework.web.jsf.SpringBeanVariableResolver</variable-resolver>
+</application
+
+
+// Para traer el WebApplicationContext actual
+ApplicationContext ctx = FacesContextUtils.getWebApplicationContext(FacesContext.getCurrentInstance());
