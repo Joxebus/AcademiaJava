@@ -14,8 +14,8 @@
 
 <!-- Inicia configuracion Spring faces-config.xml -->
 <application>
-    <variable-resolver>org.springframework.web.jsf.SpringBeanVariableResolver</variable-resolver>
-</application
+    	<el-resolver>org.springframework.web.jsf.el.SpringBeanFacesELResolver</el-resolver>
+</application>
 
 
 // Para traer el WebApplicationContext actual
