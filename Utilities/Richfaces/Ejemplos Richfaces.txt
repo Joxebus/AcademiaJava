@@ -1,0 +1,71 @@
+<rich:panel style="width:50%">
+	<h:panelGrid columns="2">
+		<h:outputText value="Name:"/>
+		<h:inputText value="#{echoBean.name}"/>
+		<h:outputText value="Echo:"/>
+		<h:outputText value="#{echoBean.name}"/>
+		<h:outputText value="Count:"/>
+		<h:outputText value="#{echoBean.count}"/>
+	</h:panelGrid>
+</rich:panel>
+
+<rich:dataTable id="statesTable"
+	value="#{statesBean.statesList}" var="state">
+	<h:column>
+		<f:facet name="header">State</f:facet>
+	<h:outputText value="#{state.name}" />
+		<rich:toolTip mode="client" >
+			<h:panelGrid>
+			<h:outputText value="#{state.name}" style="font-weight:bold"/>
+			<h:outputText value="#{state.capital}" />
+			<h:graphicImage value="#{state.flagImage}"/>
+			</h:panelGrid>
+		</rich:toolTip>
+	</h:column>
+</rich:dataTable>
+
+
+
+<!-- Llamadas ajax y actualizaciones a componentes por medio de ids -->
+<a4j:commandButton value="Submit" actionListener="#{echoBean.countListener}" reRender="echo, count"/>
+
+<!-- Llamadas ajax para validaciones o acciones de acuerdo a entradas -->
+<h:inputText value="#{echoBean.name}">
+	<a4j:support event="onkeyup" reRender="echo, count" actionListener="#{echoBean.countListener}"/>
+</h:inputText>
+
+<h:panelGrid>
+	<h:selectOneRadio value="#{userBean.color}">
+		<f:selectItem itemLabel="Red" itemValue="Red"/>
+		<f:selectItem itemLabel="Blue" itemValue="Blue"/>
+		<f:selectItem itemLabel="Green" itemValue="Green"/>
+		<f:selectItem itemLabel="Yellow" itemValue="Yellow"/>
+		<a4j:support event="onclick" reRender="col"/>
+	</h:selectOneRadio>
+	<h:outputText id="col" value="Color: #{userBean.color}"/>
+</h:panelGrid>
+
+<!-- Alerts -->
+<h:inputText id="nameInput" value="#{userBean.name}">
+	<a4j:support event="onkeyup" reRender="echo"
+		onsubmit="alert('Submitting..')"
+		oncomplete="alert('Done updating..')"
+		onbeforedomupdate="alert('Before DOM update..')"/>
+</h:inputText>
+
+
+<!-- Validates -->
+<h:inputText id="age" value="#{userBean.age}"
+	size="4" required="true"
+	requiredMessage="Age required"
+	validatorMessage="You must be 21 or older to drink">
+	<f:validateLongRange minimum="21" />
+	<a4j:support event="onblur" />
+</h:inputText>
+<rich:message for="age"/>
+
+<!-- Region ReadOnly -->
+<a4j:region renderRegionOnly="true"></a4j:region>
+
+
+
