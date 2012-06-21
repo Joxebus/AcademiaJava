@@ -1,8 +1,18 @@
 package mx.com.everis.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="PRODUCTOS")
 public class ProductoEntity implements PersistibleInterface{
 
+	
 	private long id;
+	
 	private String nombre;
 	private double precio;
 	
@@ -20,10 +30,12 @@ public class ProductoEntity implements PersistibleInterface{
 		this.precio = precio;
 	}
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	public long getId() {
 		return id;
 	}
-
+	
 	public void setId(long id) {
 		this.id = id;
 	}

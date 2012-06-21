@@ -25,7 +25,7 @@
   <property name="show_sql">true</property>
   
   <!-- Elimina y crea nuevamente el esquema cada que inicia la aplicación -->
-  <property name="hbm2ddl.auto">create</property>
+  <property name="hbm2ddl.auto">update</property>
   
    	<mapping class="mx.com.everis.entity.ProductoEntity"/>
    	<mapping class="mx.com.everis.entity.UsuarioEntity"/>

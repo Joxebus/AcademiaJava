@@ -15,6 +15,7 @@ public class ProductoEntity implements PersistibleInterface{
 	
 	private String nombre;
 	private double precio;
+	private int cantidad;
 	
 	@Override
 	public String toString() {
@@ -55,12 +56,14 @@ public class ProductoEntity implements PersistibleInterface{
 	public void setPrecio(double precio) {
 		this.precio = precio;
 	}
-	
-	
-	
-	
-	
-	
+
+	public int getCantidad() {
+		return cantidad;
+	}
+
+	public void setCantidad(int cantidad) {
+		this.cantidad = cantidad;
+	}	
 	
 
 }

@@ -12,9 +12,10 @@ import java.io.IOException;
 
 public class EjemploListas{
 	
-	@SuppressWarnings("unchecked")
+	
 	public static void main(String... args){
-		List lista = new ArrayList();
+		@SuppressWarnings("unchecked")
+		List<Persona> lista = new ArrayList<Persona>();
 		FileReader fr = null;
 		try{
 			fr = new FileReader(new File("nombres.txt"));
@@ -37,17 +38,17 @@ public class EjemploListas{
 			}			
 		}
 		System.out.println("::::: Lista sin ordenar :::::");
-		for(Object objeto : lista){
-			System.out.println(objeto);
+		for(Persona persona : lista){
+			System.out.println(persona);
 		}
 		
 	
 		Collections.sort(lista);
 		System.out.println("::::: Lista ordenada naturalmente :::::");
-		for(Object objeto : lista){
-			System.out.println(objeto);
+		for(Persona persona : lista){
+			System.out.println(Persona);
 		}
-
+/*
 		Comparator ordenarNombre = new Comparator(){
 			public int compare(Object o1, Object o2){
 				Persona persona1 = (Persona)o1;
@@ -68,6 +69,7 @@ public class EjemploListas{
 			System.out.println(objeto);
 		}
 	}
+*/
 
 }
 

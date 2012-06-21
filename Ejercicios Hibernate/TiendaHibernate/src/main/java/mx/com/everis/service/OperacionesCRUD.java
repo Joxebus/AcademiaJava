@@ -1,5 +1,12 @@
 package mx.com.everis.service;
 
+/**
+ * @author: Jorge Omar Bautista Valenzuela
+ * Date: 31/05/2012
+ * Time: 13:00 hrs
+ * e-mail: joxebus@gmail.com
+ */
+
 import java.util.List;
 
 import mx.com.everis.entity.PersistibleInterface;
@@ -8,7 +15,7 @@ import mx.com.everis.util.HibernateUtil;
 import org.hibernate.Session;
 import org.hibernate.criterion.Restrictions;
 
-public class OperacionesCRUD<T extends PersistibleInterface> {
+public class OperacionesCRUD<T extends PersistibleInterface>{
 	
 	private Session session;
 	

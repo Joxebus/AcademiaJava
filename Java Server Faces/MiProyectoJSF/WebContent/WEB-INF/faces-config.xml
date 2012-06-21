@@ -26,6 +26,24 @@
     		<property-name>crud</property-name>
     		<value>#{crudSrping}</value>
     	</managed-property>   	
+    	<managed-property>
+    		<property-name>nuevoUsuario</property-name>
+    		<value>#{usuarioRegistro}</value>
+    	</managed-property>
+    </managed-bean>
+    
+    <managed-bean>
+    	<managed-bean-name>mantenimientoProductos</managed-bean-name>
+    	<managed-bean-class>mx.com.everis.beans.MantenimientoProductosBean</managed-bean-class>
+    	<managed-bean-scope>request</managed-bean-scope> 
+    	<managed-property>
+    		<property-name>crud</property-name>
+    		<value>#{crudSrping}</value>
+    	</managed-property>   	
+    	<managed-property>
+    		<property-name>producto</property-name>
+    		<value>#{productoRegistrar}</value>
+    	</managed-property>
     </managed-bean>
     
     <navigation-rule>
@@ -40,7 +58,7 @@
     	<from-view-id>/login.jsp</from-view-id>
     	<navigation-case>
     		<from-outcome>exito</from-outcome>
-    		<to-view-id>/exito.jsp</to-view-id>
+    		<to-view-id>/registroProductos.jsp</to-view-id>
     	</navigation-case>
     	<navigation-case>
     		<from-outcome>error</from-outcome>

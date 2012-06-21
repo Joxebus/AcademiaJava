@@ -19,4 +19,27 @@
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
+	
+	<!-- Richfaces -->
+	<filter>
+		<display-name>RichFaces Filter</display-name>
+		<filter-name>richfaces</filter-name>
+		<filter-class>org.ajax4jsf.Filter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>richfaces</filter-name>
+		<servlet-name>Faces Servlet</servlet-name>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+		<dispatcher>INCLUDE</dispatcher>
+	</filter-mapping>
+
+	<!-- Opcional -->
+	<!-- Skins:  DEFAULT, plain, emeraldTown, blueSky, wine, japanCherry, ruby, classic, deepMarine, NULL, laguna, darkX, glassX -->
+	<context-param>
+		<param-name>org.richfaces.SKIN</param-name>
+		<param-value>wine</param-value>
+	</context-param>
+	
 </web-app>

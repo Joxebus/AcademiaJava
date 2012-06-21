@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf13389944994520" configfile="/MiProyectoJSF/WebContent/WEB-INF/faces-config.xml">
-  <nodes xsi:type="pageflow:PFPage" name="error" id="pf13390792122643" referenceLink="//@navigationRule.1/@navigationCase.1/@toViewId|" inlinks="pf13390811131195" path="/error.jsp"/>
-  <nodes xsi:type="pageflow:PFPage" name="exito" id="pf13390792122644" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" inlinks="pf13390811131196" path="/exito.jsp"/>
-  <nodes xsi:type="pageflow:PFPage" id="pf13390811131197" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf13390811131196 pf13390811131195 pf133908142404710" inlinks="pf13390811131198" path="/login.jsp"/>
-  <nodes xsi:type="pageflow:PFPage" name="r" id="pf13390811131199" referenceLink="//@navigationRule.1/@navigationCase.2/@toViewId|" outlinks="pf13390811131198" inlinks="pf133908142404710" path="/registro.jsp"/>
-  <links id="pf13390811131196" target="pf13390792122644" source="pf13390811131197" outcome="exito"/>
+  <nodes xsi:type="pageflow:PFPage" name="error" x="554" y="370" id="pf13390792122643" referenceLink="//@navigationRule.2/@navigationCase.1/@toViewId|" inlinks="pf13390811131195" path="/error.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="exito" x="122" y="178" id="pf13390792122644" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" path="/exito.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" x="338" y="562" id="pf13390811131197" referenceLink="//@navigationRule.2/@fromViewId|" outlinks="pf13390811131195 pf133908142404710 pf13391773281470" inlinks="pf13390811131198" path="/login.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="r" x="122" y="562" id="pf13390811131199" referenceLink="//@navigationRule.2/@navigationCase.2/@toViewId|" outlinks="pf13390811131198" inlinks="pf133908142404710" path="/registro.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="registroProductos" x="554" y="754" id="pf13391773281471" referenceLink="//@navigationRule.2/@navigationCase.0/@toViewId|" inlinks="pf13391773281470" path="/registroProductos.jsp"/>
   <links id="pf13390811131195" target="pf13390792122643" source="pf13390811131197" outcome="error"/>
   <links id="pf13390811131198" target="pf13390811131197" source="pf13390811131199" outcome="registro correcto"/>
   <links id="pf133908142404710" target="pf13390811131199" source="pf13390811131197" outcome="registrar"/>
+  <links id="pf13391773281470" target="pf13391773281471" source="pf13390811131197" outcome="exito"/>
 </pageflow:Pageflow>
