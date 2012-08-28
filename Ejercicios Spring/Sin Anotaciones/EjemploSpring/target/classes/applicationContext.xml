@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+
+	<bean name="listaDispositivos" class="java.util.ArrayList"/>
+	<!-- ¡Comenten! -->
+	<bean name="mainFactory" class="com.everis.main.MainFactory">
+		<property name="dispositivos" >
+			<list>
+				<ref bean="mp3"/>				
+			</list>
+		</property>
+		
+	</bean>
+	
+	<bean name="dvd" class="com.everis.beans.ReproductorDVD" scope="prototype" init-method="init"/>
+	<bean name="mp3" class="com.everis.beans.ReproductorMp3" scope="prototype"/>
+	<bean name="tv" class="com.everis.beans.TelevisionLed" scope="prototype"/>
+	
+	
+</beans>
