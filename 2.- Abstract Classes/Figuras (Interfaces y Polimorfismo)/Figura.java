@@ -1,4 +1,5 @@
-public interface Figura{
-	double area();
-	double perimetro();
+public interface Figura {
+    double area();
+
+    double perimetro();
 }

@@ -1,8 +1,11 @@
-public interface Animales{
+public interface Animales {
 
-	void comer();
-	void dormir();
-	void desplazarse();
-	void emitirSonido();
+    void comer();
+
+    void dormir();
+
+    void desplazarse();
+
+    void emitirSonido();
 
 }

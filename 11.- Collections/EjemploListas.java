@@ -1,4 +1,5 @@
 // Collections
+
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -10,44 +11,44 @@ import java.io.FileReader;
 import java.io.BufferedReader;
 import java.io.IOException;
 
-public class EjemploListas{
-	
-	
-	public static void main(String... args){
-		@SuppressWarnings("unchecked")
-		List<Persona> lista = new ArrayList<Persona>();
-		FileReader fr = null;
-		try{
-			fr = new FileReader(new File("nombres.txt"));
-			BufferedReader br = new BufferedReader(fr);
-			String linea;
-			while((linea = br.readLine()) != null){
-				lista.add(new Persona(linea.split(" ")));
-			}
-			
-		}catch(IOException ioe){
-			System.out.println("Ocurrio un error"); 
-		}finally{
-			if(fr != null){
-				try{
-					fr.close();
-				}catch(IOException e){
-					System.out.println("Archivo no se pudo cerrar");
-				}
-				
-			}			
-		}
-		System.out.println("::::: Lista sin ordenar :::::");
-		for(Persona persona : lista){
-			System.out.println(persona);
-		}
-		
-	
-		Collections.sort(lista);
-		System.out.println("::::: Lista ordenada naturalmente :::::");
-		for(Persona persona : lista){
-			System.out.println(Persona);
-		}
+public class EjemploListas {
+
+
+    public static void main(String... args) {
+        @SuppressWarnings("unchecked")
+        List<Persona> lista = new ArrayList<Persona>();
+        FileReader fr = null;
+        try {
+            fr = new FileReader(new File("nombres.txt"));
+            BufferedReader br = new BufferedReader(fr);
+            String linea;
+            while ((linea = br.readLine()) != null) {
+                lista.add(new Persona(linea.split(" ")));
+            }
+
+        } catch (IOException ioe) {
+            System.out.println("Ocurrio un error");
+        } finally {
+            if (fr != null) {
+                try {
+                    fr.close();
+                } catch (IOException e) {
+                    System.out.println("Archivo no se pudo cerrar");
+                }
+
+            }
+        }
+        System.out.println("::::: Lista sin ordenar :::::");
+        for (Persona persona : lista) {
+            System.out.println(persona);
+        }
+
+
+        Collections.sort(lista);
+        System.out.println("::::: Lista ordenada naturalmente :::::");
+        for (Persona persona : lista) {
+            System.out.println(Persona);
+        }
 /*
 		Comparator ordenarNombre = new Comparator(){
 			public int compare(Object o1, Object o2){
@@ -71,7 +72,7 @@ public class EjemploListas{
 	}
 */
 
-}
+    }
 
 
 

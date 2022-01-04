@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-	<bean name="listaNombres" class="java.util.Vector" />
-	<bean name="listaClientesRegistrados" class="java.util.Vector" />
-	
-	<bean name="nuevoCliente" class="com.everis.beans.Cliente" scope="prototype"/>
-	
-	<bean name="fileUtil" class="com.everis.util.FileUtil">
-		<constructor-arg index="0" value="src/main/resources/clientes.txt"/>
-	</bean>
-	
-	<bean name="cargarDatos" class="com.everis.config.CargarDatos" init-method="cargarDatos">
-		<property name="leerArchivo" ref="fileUtil"></property>
-		<property name="nombreClientes" ref="listaNombres"></property>
-	</bean>
-	
-	<bean name="ejecutivo" class="com.everis.beans.EjecutivoCuenta" scope="prototype">
-		<property name="nombreClientes" ref="listaNombres"></property>
-		<property name="clientesDadosDeAlta" ref="listaClientesRegistrados"></property>
-	</bean>
-	
-	<bean name="supervisor" class="com.everis.beans.Supervisor">
-		<property name="clientes" ref="listaClientesRegistrados"></property>
-	</bean>
-	
-	
+    <bean name="listaNombres" class="java.util.Vector"/>
+    <bean name="listaClientesRegistrados" class="java.util.Vector"/>
+
+    <bean name="nuevoCliente" class="com.everis.beans.Cliente" scope="prototype"/>
+
+    <bean name="fileUtil" class="com.everis.util.FileUtil">
+        <constructor-arg index="0" value="src/main/resources/clientes.txt"/>
+    </bean>
+
+    <bean name="cargarDatos" class="com.everis.config.CargarDatos" init-method="cargarDatos">
+        <property name="leerArchivo" ref="fileUtil"></property>
+        <property name="nombreClientes" ref="listaNombres"></property>
+    </bean>
+
+    <bean name="ejecutivo" class="com.everis.beans.EjecutivoCuenta" scope="prototype">
+        <property name="nombreClientes" ref="listaNombres"></property>
+        <property name="clientesDadosDeAlta" ref="listaClientesRegistrados"></property>
+    </bean>
+
+    <bean name="supervisor" class="com.everis.beans.Supervisor">
+        <property name="clientes" ref="listaClientesRegistrados"></property>
+    </bean>
+
+
 </beans>

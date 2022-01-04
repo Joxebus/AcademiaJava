@@ -1,6 +1,6 @@
-public class EjemploVarArgs{
+public class EjemploVarArgs {
 
-	public static void main(String args...){
-		System.out.println("VARARGS");
-	}
+    public static void main(String args...) {
+        System.out.println("VARARGS");
+    }
 }

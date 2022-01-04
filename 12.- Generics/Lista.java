@@ -1,25 +1,25 @@
 
-public class Lista<T>{
-	
-	private Nodo<T> inicio;
+public class Lista<T> {
 
-	public void add(T valorAgregar){
-		if(inicio == null){
-			inicio = new Nodo<T>(valorAgregar);
-		}else{
-			add(valorAgregar, inicio);
-		}
+    private Nodo<T> inicio;
 
-	}
+    public void add(T valorAgregar) {
+        if (inicio == null) {
+            inicio = new Nodo<T>(valorAgregar);
+        } else {
+            add(valorAgregar, inicio);
+        }
 
-	private void add(T valorAgregar, Nodo<T> actual){
-		if(actual.siguiente == null){
-			actual.siguiente = new Nodo<T>(valorAgregar);
-		}else{
-			add(valorAgregar, actual.siguiente);
-		}
-		
-	} 
+    }
+
+    private void add(T valorAgregar, Nodo<T> actual) {
+        if (actual.siguiente == null) {
+            actual.siguiente = new Nodo<T>(valorAgregar);
+        } else {
+            add(valorAgregar, actual.siguiente);
+        }
+
+    }
 /*
 	public boolean find(T valorBuscado){
 		if(inicio == null){

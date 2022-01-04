@@ -16,53 +16,53 @@ import org.hibernate.Session;
 import org.hibernate.criterion.Restrictions;
 import org.hibernate.Query;
 
-public class OperacionesCRUD<T extends PersistibleInterface>{
-	
-	private Session session;
-	
-	public void create(T obj){
-		session = HibernateUtil.getSessionFactory().getCurrentSession();
-		session.beginTransaction();
-		session.save(obj);
-		session.getTransaction().commit();
-	}
-	
-	@SuppressWarnings("unchecked")
-	public T read(T obj){
-		session = HibernateUtil.getSessionFactory().getCurrentSession();
-		session.beginTransaction();		
-		T objRead = (T)session.createCriteria(obj.getClass())
-				.add(Restrictions.idEq(obj.getId())).uniqueResult();		
-		return objRead;
-	}
-	
-	public void update(T obj){
-		session = HibernateUtil.getSessionFactory().getCurrentSession();
-		session.beginTransaction();
-		session.update(obj);
-		session.getTransaction().commit();
-	}
-	
-	public void delete(Object obj){
-		session = HibernateUtil.getSessionFactory().getCurrentSession();
-		session.beginTransaction();
-		session.delete(obj);
-		session.getTransaction().commit();
-	}
-	
-	@SuppressWarnings("rawtypes")
-	public List find(String hqlQuery){
-		session = HibernateUtil.getSessionFactory().getCurrentSession();
-		session.beginTransaction();
-		Query query = session.createQuery(hqlQuery);
-		return query.list();
-	}
-	
-	@SuppressWarnings("unchecked")
-	public List<T> list(T obj){
-		session = HibernateUtil.getSessionFactory().getCurrentSession();
-		session.beginTransaction();		
-		return session.createCriteria(obj.getClass()).list();		 
-	}
+public class OperacionesCRUD<T extends PersistibleInterface> {
+
+    private Session session;
+
+    public void create(T obj) {
+        session = HibernateUtil.getSessionFactory().getCurrentSession();
+        session.beginTransaction();
+        session.save(obj);
+        session.getTransaction().commit();
+    }
+
+    @SuppressWarnings("unchecked")
+    public T read(T obj) {
+        session = HibernateUtil.getSessionFactory().getCurrentSession();
+        session.beginTransaction();
+        T objRead = (T) session.createCriteria(obj.getClass())
+                .add(Restrictions.idEq(obj.getId())).uniqueResult();
+        return objRead;
+    }
+
+    public void update(T obj) {
+        session = HibernateUtil.getSessionFactory().getCurrentSession();
+        session.beginTransaction();
+        session.update(obj);
+        session.getTransaction().commit();
+    }
+
+    public void delete(Object obj) {
+        session = HibernateUtil.getSessionFactory().getCurrentSession();
+        session.beginTransaction();
+        session.delete(obj);
+        session.getTransaction().commit();
+    }
+
+    @SuppressWarnings("rawtypes")
+    public List find(String hqlQuery) {
+        session = HibernateUtil.getSessionFactory().getCurrentSession();
+        session.beginTransaction();
+        Query query = session.createQuery(hqlQuery);
+        return query.list();
+    }
+
+    @SuppressWarnings("unchecked")
+    public List<T> list(T obj) {
+        session = HibernateUtil.getSessionFactory().getCurrentSession();
+        session.beginTransaction();
+        return session.createCriteria(obj.getClass()).list();
+    }
 
 }

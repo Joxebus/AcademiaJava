@@ -1,6 +1,6 @@
 public class Principal {
-	
-	public static void main(String []args){
+
+    public static void main(String[] args) {
 /*
 		Persona persona = new Persona();
 		System.out.println("Paso 1 asignar");
@@ -14,13 +14,13 @@ public class Principal {
 */
 
 
-		// Propiedades estaticas
-		Perro perro = new Perro();
-		//perro.ESPECIE = "mamifero";
-		
-		Perro perroDos = new Perro();
-		System.out.println(perroDos.ESPECIE);
-	}
+        // Propiedades estaticas
+        Perro perro = new Perro();
+        //perro.ESPECIE = "mamifero";
+
+        Perro perroDos = new Perro();
+        System.out.println(perroDos.ESPECIE);
+    }
 }
 
 

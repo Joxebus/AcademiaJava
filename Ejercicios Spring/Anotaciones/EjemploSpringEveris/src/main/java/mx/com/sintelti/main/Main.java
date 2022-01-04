@@ -11,17 +11,17 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Main {
 
-	public static void main(String[] args) {
-		ApplicationContext context = new ClassPathXmlApplicationContext("/ApplicationContext.xml");
-		DispositivoElectronico dvd = context.getBean("dvdPrototype",ReproductorDVD.class);
-		DispositivoElectronico mp3 = context.getBean("mp3Prototype",ReproductorMP3.class);
-		DispositivoElectronico blueRay = context.getBean("blueRayPrototype",ReproductorBlueRay.class);
-		TestDevice tester = context.getBean("tester",TestDevice.class);
-		tester.addDevice(dvd);
-		tester.addDevice(mp3);
-		tester.addDevice(blueRay);
-		tester.testDevices();	
-		
-		System.out.println(tester.getDevices().getClass().getName());
-	}
+    public static void main(String[] args) {
+        ApplicationContext context = new ClassPathXmlApplicationContext("/ApplicationContext.xml");
+        DispositivoElectronico dvd = context.getBean("dvdPrototype", ReproductorDVD.class);
+        DispositivoElectronico mp3 = context.getBean("mp3Prototype", ReproductorMP3.class);
+        DispositivoElectronico blueRay = context.getBean("blueRayPrototype", ReproductorBlueRay.class);
+        TestDevice tester = context.getBean("tester", TestDevice.class);
+        tester.addDevice(dvd);
+        tester.addDevice(mp3);
+        tester.addDevice(blueRay);
+        tester.testDevices();
+
+        System.out.println(tester.getDevices().getClass().getName());
+    }
 }

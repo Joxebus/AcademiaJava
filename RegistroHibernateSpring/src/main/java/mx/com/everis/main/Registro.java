@@ -16,23 +16,23 @@ import mx.com.everis.util.SpringUtil;
 
 public class Registro {
 
-	public static void main(String[] args) {
-		new Registro().config();
-		// Lógica de la aplicación
-	}
-	
-	public void config(){
-		ApplicationContext context = SpringUtil.getContext();
-		OperacionesCRUD<PersonaEntity> crud = (OperacionesCRUD<PersonaEntity>) context.getBean("crud");
-		System.out.println("Se carga la base de datos");
-		FileUtil archivo = new FileUtil("personas.txt");
-		for(String nombre : archivo.readAllLines()){
-			String datos[] = nombre.split(" ");
-			crud.create((PersonaEntity)context.getBean("persona", datos[0], datos[1], datos[2]));
-		}
-		
-		
-		System.out.println("Termina la carga de la BD");
-	}
+    public static void main(String[] args) {
+        new Registro().config();
+        // Lógica de la aplicación
+    }
+
+    public void config() {
+        ApplicationContext context = SpringUtil.getContext();
+        OperacionesCRUD<PersonaEntity> crud = (OperacionesCRUD<PersonaEntity>) context.getBean("crud");
+        System.out.println("Se carga la base de datos");
+        FileUtil archivo = new FileUtil("personas.txt");
+        for (String nombre : archivo.readAllLines()) {
+            String datos[] = nombre.split(" ");
+            crud.create((PersonaEntity) context.getBean("persona", datos[0], datos[1], datos[2]));
+        }
+
+
+        System.out.println("Termina la carga de la BD");
+    }
 
 }

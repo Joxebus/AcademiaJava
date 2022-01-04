@@ -1,15 +1,15 @@
-public class Geometria{
+public class Geometria {
 
-	public void evaluarFigura(Figura figura){
-		System.out.println("Evaluando figura "+figura.getClass().getName());
-		System.out.println("Area = "+figura.area());
-		System.out.println("Perimetro = "+figura.perimetro());
-		
-		if(figura instanceof Cilindro){
-			Cilindro cilindro = (Cilindro)figura;
-			System.out.println("Volumen ="+cilindro.volumen());
-		}
-	}
+    public void evaluarFigura(Figura figura) {
+        System.out.println("Evaluando figura " + figura.getClass().getName());
+        System.out.println("Area = " + figura.area());
+        System.out.println("Perimetro = " + figura.perimetro());
+
+        if (figura instanceof Cilindro) {
+            Cilindro cilindro = (Cilindro) figura;
+            System.out.println("Volumen =" + cilindro.volumen());
+        }
+    }
 }
 
 

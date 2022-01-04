@@ -1,1 +1,1 @@
-enum Sexo { FEMENINO, MASCULINO }
+enum Sexo {FEMENINO, MASCULINO}

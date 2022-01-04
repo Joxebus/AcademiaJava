@@ -6,6 +6,6 @@
 
 package mx.com.everis.comida;
 
-public abstract class Fruta{
+public abstract class Fruta {
 
 }
